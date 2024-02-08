@@ -33,6 +33,11 @@ public class Game : MonoBehaviour
     public int amount2;
     public float amount2Profit;
 
+    //clickUpgrade
+
+    public int upgradePrize;
+    public TMP_Text upgradeText;
+
     void Start()
     {
         currentScore = 0;
@@ -53,6 +58,8 @@ public class Game : MonoBehaviour
 
         amount1Text.text = "Tier1: " + amount1 + "arts $:" + amount1Profit + "/s";
         amount2Text.text = "Tier2: " + amount2 + "arts $:" + amount2Profit + "/s";
+
+        upgradeText.text = "cost: " + upgradePrize + " $";
 
     }
 
@@ -82,6 +89,16 @@ public class Game : MonoBehaviour
             amount2Profit += 5;
             x += 5;
             shop2prize += 125;
+        }
+    }
+
+    public void Upgrade()
+    {
+        if (currentScore>=upgradePrize)
+        {
+            currentScore -= upgradePrize;
+            hitPower *= 2;
+            upgradePrize *= 3;
         }
     }
 }
