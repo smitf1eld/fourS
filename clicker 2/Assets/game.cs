@@ -47,6 +47,8 @@ public class Game : MonoBehaviour
     public int upgradePrize;
     public TMP_Text upgradeText;
 
+    public TMP_Text totalCPS;
+
     void Start()
     {
         cScore = 0;
@@ -62,14 +64,14 @@ public class Game : MonoBehaviour
         shop4price = 2000;
         finalprice = 9000;
         amount1 = 0;
-        CPS1 = 1;
+        CPS1 = 0;
         amount2 = 0;
-        CPS2 = 5;
+        CPS2 = 0;
         amount3 = 0;
-        CPS3 = 10;
+        CPS3 = 0;
         amount4 = 0;
-        CPS4 = 20;
-
+        CPS4 = 0;
+        totalCPS.text = (int)CPS + " ";
         // load
 
     }
@@ -80,17 +82,19 @@ public class Game : MonoBehaviour
         CPS = x * Time.deltaTime;
         cScore = cScore + CPS;
 
-        shop1text.text = "Building 1: " + shop1price;
-        shop2text.text = "Building 2: " + shop2price;
-        shop3text.text = "Building 3: " + shop3price;
-        shop4text.text = "Building 4: " + shop4price;
-        finaltext.text = "End this nightmare: " + finalprice;
+        shop1text.text = "Autoclick 1:\n" + shop1price;
+        shop2text.text = "Autoclick 2:\n" + shop2price;
+        shop3text.text = "Autoclick 3:\n" + shop3price;
+        shop4text.text = "Autoclick 4:\n" + shop4price;
+        finaltext.text = "Complete the game!: " + finalprice;
+        totalCPS.text = "Clicks per second: " + totalCPS;
 
 
-        amount1Text.text = "Lvl 1: " + amount1 + "x, points/s:  " + CPS1;
-        amount2Text.text = "Lvl 2: " + amount2 + "x, points/s:  " + CPS2;
-        amount3Text.text = "Lvl 3: " + amount3 + "x, points/s:  " + CPS3;
-        amount4Text.text = "Lvl 4: " + amount4 + "x, points/s:  " + CPS4;
+
+        amount1Text.text = "Lvl:" + amount1 + "\npoints/s:  " + CPS1;
+        amount2Text.text = "Lvl:" + amount2 + "\npoints/s:  " + CPS2;
+        amount3Text.text = "Lvl:" + amount3 + "\npoints/s:  " + CPS3;
+        amount4Text.text = "Lvl:" + amount4 + "\npoints/s:  " + CPS4;
 
         upgradeText.text = "Upgrade click " + upgradePrize;
     }
