@@ -159,7 +159,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 615, y: -86}
+  m_AnchoredPosition: {x: 615, y: -70}
   m_SizeDelta: {x: -1760, y: -948}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &152996049
@@ -208,7 +208,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 1537737274}
         m_TargetAssemblyTypeName: Game, Assembly-CSharp
-        m_MethodName: Shop1
+        m_MethodName: Shop4
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -1192,7 +1192,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: ---
+  m_text: BUY
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: dc36b3fdc14f47ebb36fd484a67e268a, type: 2}
   m_sharedMaterial: {fileID: 2140032, guid: dc36b3fdc14f47ebb36fd484a67e268a, type: 2}
@@ -1696,7 +1696,7 @@ GameObject:
   - component: {fileID: 1132280825}
   - component: {fileID: 1132280824}
   m_Layer: 5
-  m_Name: Text (TMP) (3)
+  m_Name: TxtUpg4
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1718,7 +1718,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: -264.5586, y: -85.99998}
+  m_AnchoredPosition: {x: -264.5586, y: -72}
   m_SizeDelta: {x: -1720, y: -928}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1132280824
@@ -1830,7 +1830,7 @@ GameObject:
   - component: {fileID: 1199769128}
   - component: {fileID: 1199769127}
   m_Layer: 5
-  m_Name: Text (TMP) (2)
+  m_Name: TxtUpg3
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2049,7 +2049,7 @@ GameObject:
   - component: {fileID: 1264960892}
   - component: {fileID: 1264960891}
   m_Layer: 5
-  m_Name: Text (TMP) (6)
+  m_Name: Upgrade3Display
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2071,7 +2071,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: -293.36914, y: -8}
+  m_AnchoredPosition: {x: -293.36914, y: 11}
   m_SizeDelta: {x: -1720, y: -928}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1264960891
@@ -2207,7 +2207,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 615, y: -232}
+  m_AnchoredPosition: {x: 615, y: -295.99997}
   m_SizeDelta: {x: -1760, y: -948}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1313928102
@@ -2256,7 +2256,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 1537737274}
         m_TargetAssemblyTypeName: Game, Assembly-CSharp
-        m_MethodName: Shop1
+        m_MethodName: Final
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -2361,7 +2361,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: ---
+  m_text: BUY
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: dc36b3fdc14f47ebb36fd484a67e268a, type: 2}
   m_sharedMaterial: {fileID: 2140032, guid: dc36b3fdc14f47ebb36fd484a67e268a, type: 2}
@@ -2873,16 +2873,28 @@ MonoBehaviour:
   hitPower: 0
   CPS: 0
   x: 0
-  Building1Cost: 0
+  shop1prize: 0
   shop1text: {fileID: 1664217076}
   shop2prize: 125
   shop2text: {fileID: 1968347256}
+  shop3prize: 0
+  shop3text: {fileID: 1199769127}
+  shop4prize: 0
+  shop4text: {fileID: 1132280824}
+  finalprize: 0
+  finaltext: {fileID: 2008004638}
   amount1Text: {fileID: 1815563682}
   amount1: 0
   CPS1: 0
   amount2Text: {fileID: 489501989}
   amount2: 0
   CPS2: 0
+  amount3Text: {fileID: 1264960891}
+  amount3: 0
+  CPS3: 0
+  amount4Text: {fileID: 1648797463}
+  amount4: 0
+  CPS4: 0
   upgradePrize: 50
   upgradeText: {fileID: 1459682200}
 --- !u!224 &1537737275
@@ -3050,7 +3062,7 @@ GameObject:
   - component: {fileID: 1648797464}
   - component: {fileID: 1648797463}
   m_Layer: 5
-  m_Name: Text (TMP) (7)
+  m_Name: Upgrade4Display
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -3072,7 +3084,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: -293.36914, y: -123}
+  m_AnchoredPosition: {x: -293.36914, y: -186}
   m_SizeDelta: {x: -1720, y: -928}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1648797463
@@ -3391,7 +3403,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 1537737274}
         m_TargetAssemblyTypeName: Game, Assembly-CSharp
-        m_MethodName: Shop1
+        m_MethodName: Shop3
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -3719,7 +3731,7 @@ GameObject:
   - component: {fileID: 2008004639}
   - component: {fileID: 2008004638}
   m_Layer: 5
-  m_Name: Text (TMP) (4)
+  m_Name: TxtFinal
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -3741,7 +3753,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: -264.5586, y: -231.99997}
+  m_AnchoredPosition: {x: -264.5586, y: -296}
   m_SizeDelta: {x: -1720, y: -928}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &2008004638
